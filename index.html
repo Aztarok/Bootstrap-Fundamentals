@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+
+    <style>
+        .remove-all {
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="d-flex container-fluid bg-danger text-white vh-100">
+        <div class="row flex-fill bg-primary">
+            <div class="col-lg-2 col-md-5 bg-dark d-flex flex-wrap align-content-center">
+                <div class="row mx-auto justify-content-center text-center w-100 my-5 h1">
+                    Portfolio
+                </div>
+                <div class="row mx-auto w-50">
+                    <button type="button" class="btn s btn-primary my-3" data-bs-toggle="home" data-bs-target="#home" selected>Home</button>
+                    <button type="button" class="btn s btn-primary my-3" data-bs-toggle="projects" data-bs-target="#projects">Projects</button>
+                    <button type="button" class="btn s btn-primary my-3" data-bs-toggle="experience" data-bs-target="#experience">Experience</button>
+                    <button type="button" class="btn s btn-primary my-3" data-bs-toggle="education" data-bs-target="#education">Education</button>
+                </div>
+            </div>
+            <div class="col-lg-10 col-md-7 bg-success h-100 d-flex">
+                <div id="home" class="d-flex w-100 content-section align-items-center ">
+                    <div class="card mx-auto align-items-center">
+                        <div class="card-body">
+                            <div class="h3">
+                                <p>Hello this is the first Bootstrap Project I Aztarok have created</p>
+                                <p>I made it change on lower screens and added buttons to change the page</p>
+                                <p>Lastly I have used some cards and a modal on the last page to test things out</p>
+                                <p>Hope to turn this into a real Portfolio website someday!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="projects" class="container-fluid mt-5 d-none content-section">
+                    <div class="row">
+                        <h2 class="mb-5">Some projects I have made to show my skills and qualifications:</h2>
+
+
+                        <div class="col-6 mt-5 d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5 d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5 d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5 d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                          
+                    </div>
+                    
+
+                </div>
+                
+                <div id="experience" class="container-fluid mt-5 d-none content-section">
+                    <div class="container">
+                        
+                        <h3 class="my-5">The programming languages I have worked with is Python, HTML, CSS, and Javascript.</h3>
+                        <h3>The frameworks I learned and used to make the projects are Bootstrap for the CSS, and React for the overall framework.</h3>
+                    </div>
+                </div>
+
+                <div id="education" class="container-md mt-5 d-none content-section">
+                    <div class="row d-block">
+                        <div class="h3 my-5">I went to college for a Computer Science degree from FIT(Florida Institute of Technology), but only went there for 3 years</div>
+                        <div class="h3 my-5">Most of my programming knowledge has been self-taught and I show what I can do in the projects section.</div>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Launch demo modal
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- <div class="btn-group btn-group-lg">
+                    <button type="button" data-section="section1" class="btn btn-primary segmentedButton ">Section1</button>
+                    <button type="button" data-section="section2" class="btn btn-primary segmentedButton">Section2</button>
+                    <button type="button" data-section="section3" class="btn btn-primary segmentedButton">Section3</button>
+                </div>
+                
+                <div class="content-section" id="section1">
+                    <h1> Section 1 </h1>
+                    <p>Section 1 Content goes here</p>
+                </div>
+                <div class="content-section" id="section2">
+                    <h1> Section 2 </h1>
+                    <p>Section 2 Content goes here</p>
+                </div>
+                <div class="content-section" id="section3">
+                    <h1> Section 3 </h1>
+                    <p>Section 3 Content goes here</p>
+                </div> -->
+
+                
+            </div>
+        </div>
+    </div>
+    <!-- Button trigger modal -->
+    
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            ...
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $(".s").on("click", function() {
+              //hide all sections
+              $(".content-section").addClass("d-none");
+              //show the section depending on which button was clicked
+              $("#" + $(this).attr("data-bs-toggle")).removeClass("d-none");
+              $("#" + $(this).attr("data-bs-toggle")).addClass("d-flex");
+            });
+          
+          });
+    </script>
+</body>
+</html>
